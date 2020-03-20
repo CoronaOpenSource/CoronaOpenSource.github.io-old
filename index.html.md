@@ -14,8 +14,8 @@ This is an open call to all IP (intellectual property) owners to release your IP
 
 ## These businesses need to realise two things
 
-1. they can make a lot of money out of licensing these technologies.  We will need billions of tests per day.  Not millions per month (see Qiagen's "dramatically ramping up" to 10 million tests per month press release: https://corporate.qiagen.com/newsroom/press-releases/2020/20200317_capacity_increase  This level of testing is woefully inadequate)
-2. The slower they are to act then the very fabric that their business value is built on; skilled people, research budgets, consumption, capitalism, will be eaten away over the next weeks and months.  And the exponentially greater risk people will just go around them.  There's already multiple international efforts underway to develop and scale up open tests in spite of these companies rather than enabled by them.
+1.  They can make a lot of money out of licensing these technologies.  We will need billions of tests per day.  Not millions per month (see Qiagen's "dramatically ramping up" to [10 million tests per month by June](https://corporate.qiagen.com/newsroom/press-releases/2020/20200317_capacity_increase)  This level of testing is woefully inadequate)
+2.  The slower they are to act then the very fabric that their business value is built on; skilled people, research budgets, consumption, capitalism, will be eaten away over the next weeks and months.  And the exponentially greater risk people will just go around them.  There's already multiple international efforts underway to develop and scale up open tests in spite of these companies rather than enabled by them.
 
 ## Take action
 
