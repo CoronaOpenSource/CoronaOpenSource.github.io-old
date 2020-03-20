@@ -1,7 +1,7 @@
 
 # Corona Open Source
 
-## Open source information of science and technology defeating Corona virus.
+## Open source information of science and technology to defeat the Corona virus
 
 Our globalised world has optimised for two things: speed and low prices.  It is not optimised for resilience.  We might like to think of ourselves as islands but generic drugs and PPE that keep us safe are manufactured in Indian and China.  Likewise test kits and ventilator designs are produced here and elsewhere.  There are a myriad of connections.  We depend on each other.
 
@@ -12,7 +12,7 @@ We have some of the technologies needed to defeat corona virus right now.  Over 
 
 This is an open call to all IP (intellectual property) owners to release your IP.  Show us and help us build your technology to defeat this challenge.
 
-Please submit your intellectual property here: [groups.google.com - coronaopensource](https://groups.google.com/forum/#!newtopic/coronaopensource) (public Google group).  Thank you.
+Please submit your intellectual property here: [groups.google.com - coronaopensource](https://groups.google.com/forum/#!newtopic/coronaopensource) (public Google group).  Or email us [coronaopensource@gmail.com](mailto:coronaopensource@gmail.com)  Thank you.
 
 
 ## Media
@@ -20,6 +20,7 @@ Please submit your intellectual property here: [groups.google.com - coronaopenso
 [BBC World Service](https://www.bbc.co.uk/sounds/play/w3csy7l6)
 We will rise or fall together.
 
+[Twitter](https://twitter.com/CoronaOpen)
 
 ## Navigation
 
