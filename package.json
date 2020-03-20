@@ -1,0 +1,14 @@
+{
+  "name": "coronaopensource.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:coronaopensource/coronaopensource.com.git",
+  "author": "AJP <bioajp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "showdown": "^1.9.1"
+  },
+  "scripts": {
+    "convert": "node convert.js"
+  }
+}
