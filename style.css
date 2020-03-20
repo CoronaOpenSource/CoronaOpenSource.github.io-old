@@ -20,7 +20,8 @@ h1{
 	padding-bottom: 15px;
 }
 h1,h2,h3{
-	font-family: "Georgia",serif;
+  font-family: "Georgia",serif;
+  line-height: 2em;
 }
 h2,a{
 	color:#0da4da
