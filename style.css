@@ -9,7 +9,7 @@ body {
 	width:60%;
 	margin: 0;
 	padding: 10vh 20%;
-	transition: all 0.3s ease-in-out;
+	/* transition: all 0.3s ease-in-out; */
 	font-family: "Helvetica",sans-serif;
 }
 h1{
