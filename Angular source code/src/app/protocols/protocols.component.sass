@@ -1,0 +1,150 @@
+header  
+  width: 100% 
+  height: 100vh 
+  background: url("https://images.pexels.com/photos/3966250/pexels-photo-3966250.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+  background-size: cover
+  display: flex
+  justify-content: center 
+  align-items: center 
+  margin-top: 60px 
+  background-position-y: bottom
+  .headerTitle
+    color: #313131 
+    background: white 
+    padding: 10px 20px 
+    font-size: 30px
+    width: 50%
+    text-align: center 
+
+.sampleContainer 
+  width: 100% 
+  background: white
+  height: 100vh
+  display: flex 
+  flex-direction: row 
+  justify-content: space-around 
+  align-items: center 
+  .cardContainer  
+    width: 30% 
+    height: 70vh
+    display: flex 
+    background: white 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    flex-direction: column
+    position: relative 
+    overflow: hidden
+    .sample 
+      background: url("https://images.pexels.com/photos/408503/pexels-photo-408503.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+      background-position: center center 
+      background-size: cover 
+       
+    .analysis
+      background: url("https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+      background-position: center center 
+      background-size: cover 
+      .cardTitle
+        background: #0984e3 !important
+    .cardHeader 
+      height: 85%
+      width: 100% 
+      display: flex 
+      justify-content: flex-end
+      position: relative 
+      .cardContentContainer
+        width: 100% 
+        height: 85% 
+        background: white
+        position: absolute
+        transform: translateY(200%)
+        transition: all 300ms ease
+        display: flex 
+        align-items: center 
+        justify-content: center 
+        .contentsContainer
+          height: 100% 
+          width: 100% 
+          display: flex 
+          align-items: center 
+          ul  
+            margin: 0 
+            height: 100%
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            li 
+              width: 80% 
+              height: 25% 
+              border-bottom: 2px solid #efefef
+              display: flex 
+              align-items: center 
+              font-size: 15px
+              position: relative
+              &:last-child
+                border: none
+              span 
+                color: #16a085
+                font-size: 30px
+                margin-right: 20px
+              strong
+                cursor: pointer 
+                &:hover 
+                  color: #2980b9
+           
+                 
+
+        .closeContent
+          position: absolute
+          cursor: pointer 
+          transition: all 200ms ease 
+          right: 10px 
+          top: 10px
+          &:hover 
+            transform: rotate(90deg)
+            color: #e74c3c
+      .showOptions
+        transform: translateY(0)
+      .optionsContainer
+        position: absolute 
+        width: 100% 
+        height: 15% 
+        background: #2d3436
+        bottom: 0
+        display: flex 
+        flex-direction: row 
+        color: white 
+        opacity: 0.5
+        .option 
+          width: 50% 
+          height: 100% 
+          cursor: pointer 
+          display: flex 
+          align-items: center 
+          justify-content: center 
+          &:hover 
+            background: black 
+      .cardTitle 
+        background: #ff5252
+        color: white 
+        margin: 20px 
+        padding: 10px 
+        border-radius: 25px 
+        height: 20px
+        font-size: 16px 
+    .cardFooterContainer
+      width: 100% 
+      height: 15% 
+      font-size: 12px 
+      text-align: justify
+      background: #ff5252
+      color: white 
+      display: flex 
+      align-items: center 
+      justify-content: center
+      i
+        width: 70% 
+        margin-left: 20px
+
+  
+  

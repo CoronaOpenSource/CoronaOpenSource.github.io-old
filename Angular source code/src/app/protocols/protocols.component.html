@@ -1,0 +1,120 @@
+<header>
+  <div class="headerTitle">
+    <strong>TESTING FOR PRESENCE OF CORONA VIRUS </strong>
+  </div>
+</header>
+
+<div class="sampleContainer">
+
+  <div class="cardContainer">
+
+    <div class="cardHeader sample">
+      <div class="cardTitle">
+        <span>Sample Colection</span>
+      </div>
+      <div [class.showOptions]="showOptions" class="cardContentContainer">
+        <span (click)="showOptions=false" class="closeContent material-icons">close</span>
+
+
+
+        <div class="contentsContainer" *ngIf="location == true; else elseBlock">
+          <ul>
+            <li>
+              <span class="material-icons">local_hospital</span> Central facilties like hospitals, or pharmacies
+            </li>
+            <li>
+              <span class="material-icons">emoji_transportation</span> Drive through
+            </li>
+            <li>
+              <span class="material-icons">home</span> Home testing
+            </li>
+
+          </ul>
+        </div>
+        <ng-template #elseBlock>
+          <div class="contentsContainer">
+            <ul>
+              <li>
+                <span class="material-icons">search</span> Nasal and throat swab
+              </li>
+              <li>
+                <span class="material-icons">cancel</span> <a target="__blank" href="https://www.who.int/bloodproducts/publications/WHO_TRS_924_A4.pdf"><strong title="More information" >Inactivation buffer</strong></a>   
+              </li>
+
+
+            </ul>
+          </div>
+        </ng-template>
+
+
+
+      </div>
+      <div class="optionsContainer">
+        <div (click)="location=true; showOptions=true" title="Location" class="option">
+          <span class="material-icons">location_on</span>
+        </div>
+        <div (click)="location=false; showOptions=true" title="Kit needed" class="option">
+          <span class="material-icons">local_hospital</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardFooterContainer">
+      <span class="material-icons">warning</span> <i>We should aim to get to all samples being taken at home. This will
+        reduce the infection of others including health care workers and other patients.</i>
+    </div>
+  </div>
+
+
+  <div class="cardContainer">
+
+    <div class="cardHeader analysis">
+      <div class="cardTitle">
+        <span>Analysis</span>
+      </div>
+      <div [class.showOptions]="showOptionsAnalysis" class="cardContentContainer">
+        <span (click)="showOptionsAnalysis=false" class="closeContent material-icons">close</span>
+        <div class="contentsContainer" *ngIf="locationAnalysis == true; else elseBlockAnalysis">
+          <ul>
+            <li>
+              <span class="material-icons">local_hospital</span> Central facilties like hospitals, or pharmacies
+            </li>
+            <li>
+              <span class="material-icons">emoji_transportation</span> Drive through
+            </li>
+            <li>
+              <span class="material-icons">home</span> Home testing
+            </li>
+          </ul>
+        </div>
+        <ng-template #elseBlockAnalysis>
+          <div class="contentsContainer">
+            <ul>
+              <li>
+                <span class="material-icons">search</span> RNA based (e.g., qRT PCR, CRISPR, LAMP)
+              </li>
+              <li>
+                <span class="material-icons">cancel</span> Antibody based (e.g., Antibody gold colloid)
+              </li>
+            </ul>
+          </div>
+        </ng-template>
+      </div>
+      <div class="optionsContainer">
+        <div (click)="locationAnalysis=true; showOptionsAnalysis=true" title="Location" class="option">
+          <span class="material-icons">location_on</span>
+        </div>
+        <div (click)="locationAnalysis=false; showOptionsAnalysis=true" title="Kit needed" class="option">
+          <span class="material-icons">play_for_work</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardFooterContainer">
+      <span class="material-icons">warning</span> <i>We should aim to get to all samples being taken at home to be
+        analysed at home. This reduces the time between sample and result.</i>
+    </div>
+  </div>
+
+
+</div>
