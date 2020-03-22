@@ -1,0 +1,5 @@
+- Install angular and angular cli 
+- cd to the angular app directory (in this case it would be the angular source code folder)
+- in the command prompt type the folowing command: 
+  ng build docs --base-href ./
+ - copy the contnets of the dist folder into the docs folder 
