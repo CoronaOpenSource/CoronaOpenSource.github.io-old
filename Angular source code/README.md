@@ -18,6 +18,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
     Angular Source Code$  ng build --prod
     Angular Source Code$  cp ./dist/corona-app/index.html ./dist/corona-app/404.html
+    Angular Source Code$  rm -rf ../assets ../*.js
     Angular Source Code$  cp -r ./dist/corona-app/ ../
 
 ## Running unit tests
