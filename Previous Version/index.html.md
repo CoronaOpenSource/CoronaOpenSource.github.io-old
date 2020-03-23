@@ -3,7 +3,7 @@
 
 ## Open source information of science and technology to defeat the Corona virus
 
-Our globalised world has optimised for two things: speed and low prices.  It is not optimised for resilience.  We might like to think of ourselves as islands but generic drugs and PPE that keep us safe are manufactured in Indian and China.  Likewise test kits and ventilator designs are produced here and elsewhere.  There are a myriad of connections.  We depend on each other.
+Our globalised world has optimised for two things: speed and low prices.  It is not optimised for resilience.  We might like to think of ourselves as islands but generic drugs and PPE that keep us safe are manufactured in India and China.  Likewise test kits and ventilator designs are produced here and elsewhere.  There are a myriad of connections.  We depend on each other.
 
 We have some of the technologies needed to defeat corona virus right now.  Over the next few months, we'll get more.  But we need to do two things:
 

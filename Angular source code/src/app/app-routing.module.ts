@@ -4,16 +4,18 @@ import { CommonModule } from '@angular/common';
 import { BodyComponent } from './body/body.component';
 import { ProtocolsComponent } from './protocols/protocols.component';
 import { EthicsComponent } from './ethics/ethics.component';
+import { LicensesComponent } from './licenses/licenses.component';
 import { ReagentsComponent } from './reagents/reagents.component';
 import { AppComponent } from './app.component';
 import { MissionComponent } from './mission/mission.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:"home", pathMatch:"full" },
+  { path: '', redirectTo: "home", pathMatch: "full" },
   { path: 'home', component:  BodyComponent},
   { path: 'strategy', component:  MissionComponent},
   { path: 'protocols', component:  ProtocolsComponent},
   { path: 'ethics', component:  EthicsComponent},
+  { path: 'licenses', component:  LicensesComponent},
 ];
 
 
