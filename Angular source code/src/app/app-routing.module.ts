@@ -9,20 +9,20 @@ import { AppComponent } from './app.component';
 import { MissionComponent } from './mission/mission.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:"home", pathMatch:"full" }, 
-  { path: 'home', component:  BodyComponent}, 
-  { path: 'mission', component:  MissionComponent}, 
-  { path: 'protocols', component:  ProtocolsComponent}, 
-  { path: 'ethics', component:  EthicsComponent}, 
+  { path: '', redirectTo:"home", pathMatch:"full" },
+  { path: 'home', component:  BodyComponent},
+  { path: 'strategy', component:  MissionComponent},
+  { path: 'protocols', component:  ProtocolsComponent},
+  { path: 'ethics', component:  EthicsComponent},
 ];
 
 
 @NgModule({
   declarations: [ ],
   imports: [
-    CommonModule, 
+    CommonModule,
     [RouterModule.forRoot(routes)]
-  ], 
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
