@@ -9,6 +9,7 @@ import { ProtocolsComponent } from './protocols/protocols.component';
 import { ReagentsComponent } from './reagents/reagents.component';
 import { EthicsComponent } from './ethics/ethics.component';
 import { LicensesComponent } from './licenses/licenses.component';
+import { MediaComponent } from './media/media.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MissionComponent } from './mission/mission.component';
 
@@ -22,6 +23,7 @@ import { MissionComponent } from './mission/mission.component';
     ReagentsComponent,
     EthicsComponent,
     LicensesComponent,
+    MediaComponent,
     MissionComponent
   ],
   imports: [
