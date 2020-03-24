@@ -1,10 +1,38 @@
 <nav>
-    <img class="logo" src="https://raw.githubusercontent.com/CoronaOpenSource/CoronaOpenSource.github.io/master/images/logo-400px.png" alt="">
+  <div class="menuContainer">
+    <span (click)="showNav = true" class="material-icons">menu</span>
+  </div>
+  <div [class.showNav]="showNav" class="navContainer">
+    <div class="navHeader">
+      <span (click)="showNav=false" class="closeNav material-icons">close</span>
+      <img
+        src="https://raw.githubusercontent.com/CoronaOpenSource/CoronaOpenSource.github.io/master/images/logo-large.png"
+        alt="">
+      <p> <a title="Email" href="mailto:coronaopensource@gmail.com ">coronaopensource@gmail.com</a> </p>
+      <p>
+        <a title="Google groups" target="__blank" href="https://groups.google.com/forum/#!newtopic/coronaopensource">
+          Google groups
+        </a>
+      </p>
+    </div>
+    <div class="navOptions">
+      <ul>
+        <li (click)="showNav=false" routerLink="/home"><span routerLinkActive="active_nav">Home</span> </li>
+        <li (click)="showNav=false" routerLink="/mission"><span routerLinkActive="active_nav">Mission</span> </li>
+        <li (click)="showNav=false" routerLink="/protocols"><span routerLinkActive="active_nav">Open Testing Protocols</span> </li>
+        <li (click)="showNav=false" routerLink="/ethics"><span routerLinkActive="active_nav">Ethics</span> </li>
+      </ul>
+    </div>
+  </div>
+  <div [class.showBlackScrn]="showNav" (click)="showNav=false" class="black"></div>
+  <img class="logo"
+    src="https://raw.githubusercontent.com/CoronaOpenSource/CoronaOpenSource.github.io/master/images/logo-400px.png"
+    alt="">
   <ul>
-    <li  routerLink="/home"><span routerLinkActive="active_nav" >Home</span> </li>
-    <li  routerLink="/mission"><span routerLinkActive="active_nav" >Mission</span> </li>
-    <li  routerLink="/protocols"><span routerLinkActive="active_nav" >Open Testing Protocols</span> </li>
-    <li  routerLink="/ethics"><span routerLinkActive="active_nav" >Ethics</span> </li>
-
+    <li routerLink="/home"><span routerLinkActive="active_nav">Home</span> </li>
+    <li routerLink="/mission"><span routerLinkActive="active_nav">Mission</span> </li>
+    <li routerLink="/protocols"><span routerLinkActive="active_nav">Open Testing Protocols</span> </li>
+    <li routerLink="/ethics"><span routerLinkActive="active_nav">Ethics</span> </li>
   </ul>
+
 </nav>

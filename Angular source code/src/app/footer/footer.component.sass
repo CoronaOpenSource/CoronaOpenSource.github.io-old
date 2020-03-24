@@ -1,3 +1,5 @@
+@import "../mixins"
+
 footer 
   width: 100% 
   height: 70px 
@@ -6,13 +8,23 @@ footer
   align-items: center 
   background: #171717
   justify-content: space-around
+  @include mQ(600px)
+    flex-direction: column 
+    height: 100px
   .copyrightContainer
     width: 30%
     display: flex 
     align-items: center 
     color: white
     justify-content: center 
+    @include mQ(950px)
+      width: 50%
+    @include mQ(600px)
+      width: 100%
+      height: 50%
 
+
+      
     a 
       color: #2980b9
       text-decoration: underline 
@@ -22,13 +34,18 @@ footer
     width: 30%
     display: flex
     align-items: center
-
+    @include mQ(600px)
+      width: 100%
+      height: 50%
+      justify-content: center 
     img 
       height: 20px 
       width: auto  
       margin-right: 10px 
       cursor: pointer 
       transition: all 100ms ease
+      @include mQ(600px)
+        margin-right: 20px
       &:hover 
         transform: translateY(-5px)
     span
@@ -42,6 +59,8 @@ footer
     width: 30%
     display: flex 
     justify-content: flex-end
+    @include mQ(950px)
+      display: none
     img 
       height: 50px
       width: auto
