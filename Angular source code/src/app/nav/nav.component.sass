@@ -1,3 +1,4 @@
+@import "../mixins"
 nav 
   width: 100% 
   height: 60px 
@@ -8,10 +9,88 @@ nav
   justify-content: space-between
   align-items: center
   background: white
-  
+  .menuContainer
+    margin-left: 20px 
+    display: none 
+    span
+      font-size: 35px  
+      cursor: pointer 
+      &:hover 
+        color: #e74c3c
+    @include mQ(550px)
+      display: block 
+  .navContainer
+    width: 85%
+    background: white 
+    position: fixed 
+    height: calc(100vh - 60px)
+    top: 60px 
+    z-index: 500
+    transition: all 300ms ease
+    transform: translateX(-100%)
+    display: none 
+    @include mQ(550px)
+      display: block 
+    .navHeader
+      width: 100% 
+      height: 20% 
+      background: white 
+      border-bottom: 1px solid #d5d5d5 
+      display: flex 
+      flex-direction: column
+      .closeNav
+        position: absolute 
+        right: 10px 
+        top: 10px 
+      p 
+        margin: 0 0 2px 40px 
+      a 
+        color: #bdc3c7
+        &:hover 
+          color: #3498db
+      img 
+        width: 80% 
+        height: auto 
+        max-width: 255px
+    .navOptions 
+      width: 100% 
+      ul 
+        display: flex 
+        flex-direction: column 
+        margin: 0 
+        padding: 0 
+        li 
+          width: 100% 
+          height: 70px 
+          border-bottom: 1px solid  #d5d5d5 
+          display: flex 
+          align-items: center 
+          cursor: pointer 
+          &:hover span 
+            color: #c0392b
+          span 
+            margin-left: 20px
+            border: none !important
+           
+
+  .black 
+    background: black 
+    width: 100%
+    position: fixed 
+    height: calc(100vh - 60px)
+    top: 61px  
+    display: none 
+    transition: all 300ms ease
+    @include mQ(550px)
+      display: block
+      opacity: 0 
+      visibility: hidden 
   .logo
       width: 65px 
       margin-left: 50px
+      @include mQ(550px)
+        margin: 0 30px 0 0 
+       
   ul
     display: flex 
     flex-direction: row
@@ -20,7 +99,12 @@ nav
     width: 40%
     height: 100%
     margin: 0 30px 0 0
-    
+    @include mQ(1000px)
+      width: 60% 
+    @include mQ(650px)
+      width: 80% 
+    @include mQ(550px)
+      display: none
     
     li 
       cursor: pointer
@@ -36,3 +120,11 @@ nav
         transform: translateY(-5px)
 .active_nav
   border-bottom: 3px solid #e74c3c
+  @include mQ(550px)
+      color: #c0392b
+
+.showBlackScrn 
+  opacity: 0.8 !important
+  visibility: visible !important
+.showNav 
+  transform: translateX(0) !important

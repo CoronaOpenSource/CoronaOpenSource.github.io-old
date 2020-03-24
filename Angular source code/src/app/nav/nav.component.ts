@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.sass']
 })
 export class NavComponent implements OnInit {
-
+  public showNav = false;
+  
   constructor() { }
 
   ngOnInit() {
