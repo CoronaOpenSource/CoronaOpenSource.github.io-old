@@ -1,3 +1,5 @@
+@import "../mixins"
+
 header  
   width: 100% 
   height: 100vh 
@@ -7,6 +9,11 @@ header
   justify-content: center 
   align-items: center 
   margin-top: 60px 
+  @include mQ(700px)
+    background-position-x: -200px 
+  @include mQ(670px)
+    background-position-x: -400px 
+
   .headerTitle
     color: #313131 
     background: white 
@@ -27,7 +34,8 @@ header
     width: 60% 
     text-align: center 
     font-size: 25px
-    margin: 0
+    margin: 0 0 30px 0 
+
   .highlight
     padding: 10px 20px 10px 20px
     background: #e74c3c
@@ -39,6 +47,9 @@ header
     display: flex 
     align-items: center 
     margin-top: 20px
+    @include mQ(700px)
+      font-size: 20px
+
     &:hover
       background: #c0392b
 
@@ -50,6 +61,10 @@ header
   flex-wrap: nowrap
   height: 100vh
   position: relative
+  @include mQ(1000px)
+    // height: 50vh 
+    flex-direction: column
+
 
   .thing 
     width: 50% 
@@ -57,6 +72,9 @@ header
     display: flex 
     justify-content: center
     align-items: center 
+    @include mQ(1000px)
+      width: 100% 
+      height: 50%
   .text
     font-size: 20px 
     padding: 10px 20px 10px 20px
@@ -65,12 +83,17 @@ header
     max-width: 440px
     text-align: center
     max-height: 50px
+    @include mQ(350px)
+      max-height: 70px
   .time 
     background: url("https://images.pexels.com/photos/39396/hourglass-time-hours-sand-39396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
     background-size: cover 
+    @include mQ(1000px)
+      background-position-y: center 
   .scale 
     background: url("https://images.pexels.com/photos/1098515/pexels-photo-1098515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
     background-size: cover 
+    
   
 .licenceContainer
   width: 100% 
@@ -79,6 +102,11 @@ header
   position: relative
   flex-direction: column
   height: 90vh
+  @include mQ(500px)
+    height: auto 
+    margin-bottom: 30px
+  
+  
   .title
     // position: absolute
     top: 0px
@@ -89,6 +117,19 @@ header
     text-align: center
     max-height: 50px
     color: white
+    @include mQ(750px)
+      width: 100%
+      // font-size: 25px 
+      // height: 100px
+      max-height: 200px
+
+      span
+        width: 80%
+
+ 
+     
+
+
   .cardContainer
     width: calc(80% + 40px)
     height: 60vh
@@ -97,31 +138,48 @@ header
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
     background: white
     margin-top: 50px
-    
-    .panel 
-      width: 10% 
-      background: #e74c3c
-      height: 60vh
+    @include mQ(750px)
+      width: 100%
+      margin: 0
     ul 
       display: flex
       align-items: flex-start
       justify-content: space-around
       flex-direction: column
       height: 100%
-      width: 90%
-    
+      width: 100%
+      margin: 0 
+      @include mQ(750px)
+        padding: 0 
       li
         display: flex 
         flex-direction: row 
         justify-content: flex-start
         align-items: center
         width: 90% 
+        text-align: justify
+        @include mQ(500px)
+          width: 100% 
+          height: 50% 
+          justify-content: center
+          color: white 
+          font-weight: 200
+          &:first-child 
+            background: #2c3e50
+          &:last-child 
+            background: #e74c3c
+
+
+
         .numberContainer
           width: 20%
           display: flex 
           justify-content: center 
           align-items: center
           margin-right: 50px
+          @include mQ(500px)
+            display: none
+
           .itemNumber 
             width: 50px 
             height: 50px 
@@ -131,10 +189,16 @@ header
             display: flex 
             justify-content: center
             align-items: center
-        .listContainer .text
-          text-align: justify
+        .listContent 
+          @include mQ(500px)
+            width: 90% 
+            display: flex 
+            justify-content: center 
+          
           a 
             color: #2980b9
             text-decoration: underline 
+            @include mQ(500px)
+              color: #55bbff
             &:hover 
               color: #0d5b8f
