@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "full_build": "ng build --prod && cp ./dist/corona-app/index.html ./dist/corona-app/404.html && rm -rf ../assets ../*.js && cp -r ./dist/corona-app/ ../",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
